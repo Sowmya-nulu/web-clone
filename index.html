@@ -4,17 +4,9 @@
     <meta charset="UTF-8">
     <title>NxtWave's Empowering Podcast Series</title>
     <meta name="description" content="Exclusive insights, Timely Advice and Personal Growth Journeys straight from the tech experts.">
-    
-    <!-- External Stylesheets -->
     <link rel="stylesheet" href="styles.css">
-    
-    <!-- External JavaScript -->
-    <script src="script.js"></script>
 </head>
-
 <body>
-
-    <!-- Navbar -->
     <nav class="navbar">
         <div class="container">
             <a href="#" class="brand">
@@ -24,40 +16,30 @@
         </div>
     </nav>
 
-    <!-- Hero Section -->
     <section class="hero-section">
         <h1 class="hero-heading">A Sr. Recruiter at <br> <span>Acing Interviews</span></h1>
 
-        <!-- Video Section with Given Links -->
-        <div class="video-container">
-            <video id="podcast-video1" width="100%" autoplay loop muted playsinline poster="https://nxtwave-website-media-files.s3.ap-south-1.amazonaws.com/ccbp-website/podcast/landing-section-bg-videos/amazon-thumbnails.jpg">
-                <source src="https://nxtwave-website-media-files.s3.ap-south-1.amazonaws.com/ccbp-website/podcast/landing-section-bg-videos/mobile-videos/ritesh-amazon.mp4" type="video/mp4">
-            </video>
-
-            <video id="podcast-video2" width="100%" autoplay loop muted playsinline poster="https://nxtwave-website-media-files.s3.ap-south-1.amazonaws.com/ccbp-website/podcast/landing-section-bg-videos/uber-thumbnail.jpg">
-                <source src="https://nxtwave-website-media-files.s3.ap-south-1.amazonaws.com/ccbp-website/podcast/landing-section-bg-videos/mobile-videos/sandeep-uber.mp4" type="video/mp4">
-            </video>
-
-            <video id="podcast-video3" width="100%" autoplay loop muted playsinline poster="https://nxtwave-website-media-files.s3.ap-south-1.amazonaws.com/ccbp-website/podcast/landing-section-bg-videos/mysys-thumbnail.jpg">
-                <source src="https://nxtwave-website-media-files.s3.ap-south-1.amazonaws.com/ccbp-website/podcast/landing-section-bg-videos/mobile-videos/sanjay-sehgal-mysys.mp4" type="video/mp4">
-            </video>
-
-            <video id="podcast-video4" width="100%" autoplay loop muted playsinline poster="https://nxtwave-website-media-files.s3.ap-south-1.amazonaws.com/ccbp-website/podcast/landing-section-bg-videos/microsoft-thumbnail.jpg">
-                <source src="https://nxtwave-website-media-files.s3.ap-south-1.amazonaws.com/ccbp-website/podcast/landing-section-bg-videos/mobile-videos/shiva-ghani-microsoft.mp4" type="video/mp4">
-            </video>
-
-            <video id="podcast-video5" width="100%" autoplay loop muted playsinline poster="https://nxtwave-website-media-files.s3.ap-south-1.amazonaws.com/ccbp-website/podcast/landing-section-bg-videos/slice-thumbnail.jpg">
-                <source src="https://nxtwave-website-media-files.s3.ap-south-1.amazonaws.com/ccbp-website/podcast/landing-section-bg-videos/mobile-videos/siva-kumar-slice.mp4" type="video/mp4">
-            </video>
-
-            <video id="podcast-video6" width="100%" autoplay loop muted playsinline poster="https://nxtwave-website-media-files.s3.ap-south-1.amazonaws.com/ccbp-website/podcast/landing-section-bg-videos/superk-thumbnail.jpg">
-                <source src="https://nxtwave-website-media-files.s3.ap-south-1.amazonaws.com/ccbp-website/podcast/landing-section-bg-videos/mobile-videos/naveen-superk.mp4" type="video/mp4">
-            </video>
+        <!-- Video Carousel -->
+        <div class="carousel-container">
+            <div class="carousel">
+                <video class="carousel-video" autoplay loop muted playsinline>
+                    <source src="https://nxtwave-website-media-files.s3.ap-south-1.amazonaws.com/ccbp-website/podcast/landing-section-bg-videos/mobile-videos/ritesh-amazon.mp4" type="video/mp4">
+                </video>
+                <video class="carousel-video" autoplay loop muted playsinline>
+                    <source src="https://nxtwave-website-media-files.s3.ap-south-1.amazonaws.com/ccbp-website/podcast/landing-section-bg-videos/mobile-videos/sandeep-uber.mp4" type="video/mp4">
+                </video>
+                <video class="carousel-video" autoplay loop muted playsinline>
+                    <source src="https://nxtwave-website-media-files.s3.ap-south-1.amazonaws.com/ccbp-website/podcast/landing-section-bg-videos/mobile-videos/sanjay-sehgal-mysys.mp4" type="video/mp4">
+                </video>
+            </div>
+            <button class="prev">&#10094;</button>
+            <button class="next">&#10095;</button>
         </div>
 
         <button class="cta-button">Claim Free Access</button>
         <button class="secondary-button">Watch Trailer</button>
     </section>
 
+    <script src="script.js"></script>
 </body>
 </html>
