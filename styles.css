@@ -97,3 +97,20 @@
 
 .prev { left: 10px; }
 .next { right: 10px; }
+
+.container{
+    background-color: #0b0f19;
+    color: #ffffff;
+}
+.company-section {
+    text-align: center;
+    padding: 50px 20px;
+}
+.company-section h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+.logo-container img {
+    max-height: 50px;
+    margin: 10px 20px;
+}
