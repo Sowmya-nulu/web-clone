@@ -65,10 +65,49 @@
             </div>
         </div>
     </section>
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.0.7/dist/umd/popper.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <section class="hero-section">
+        <h1>A Rare Collection of Insider Knowledge, All Yours!</h1>
+        <p>Exclusive insights, timely advice, and personal growth journeys straight from the tech experts.</p>
 
-    <script src="script.js"></script>
+        <div class="filter-buttons">
+            <button class="filter-btn active" onclick="filterCards('trending')">🔥 Trending</button>
+            <button class="filter-btn" onclick="filterCards('all')">All</button>
+            <button class="filter-btn" onclick="filterCards('tech')">Tech</button>
+            <button class="filter-btn" onclick="filterCards('career')">Career</button>
+            <button class="filter-btn" onclick="filterCards('cxo')">CXO</button>
+            <button class="filter-btn" onclick="filterCards('productivity')">Productivity</button>
+            <button class="filter-btn" onclick="filterCards('gsoc')">GSOC</button>
+            <button class="filter-btn" onclick="filterCards('panel')">Panel</button>
+        </div>
+
+        <div class="card-container">
+            <div class="card" data-category="trending tech">
+                <img src="sandeep.jpg" alt="Sandeep Gorthi">
+                <h2>An Engineering Manager at Uber Teaches Programming</h2>
+                <p>Sandeep Gorthi - Engineering Manager at Uber</p>
+                <p>Discover the secrets of building scalable systems and leading engineering teams.</p>
+                <button class="watch-button" onclick="navigateToVideo('https://example.com/video1.mp4')">Watch Full Episode</button>
+                <button class="trailer-button" onclick="playTrailer('https://example.com/video1.mp4')">Trailer</button>
+            </div>
+
+            <div class="card" data-category="trending career">
+                <img src="pritesh.jpg" alt="Pritesh Malode">
+                <h2>A Sr. Recruiter at Amazon Teaches Acing Interviews</h2>
+                <p>Pritesh Malode - Senior Recruiter at Amazon</p>
+                <p>Master the art of interview preparation and learn what top companies look for.</p>
+                <button class="watch-button" onclick="navigateToVideo('https://example.com/video2.mp4')">Watch Full Episode</button>
+                <button class="trailer-button" onclick="playTrailer('https://example.com/video2.mp4')">Trailer</button>
+            </div>
+
+            <div class="card" data-category="trending productivity">
+                <img src="sanjay.jpg" alt="Sanjay Sehgal">
+                <h2>A Global CEO Teaches Mastering Time Management</h2>
+                <p>Sanjay Sehgal - Chairman & CEO at Msys Technologies</p>
+                <p>Unlock strategies for productivity and balancing work-life like a pro.</p>
+                <button class="watch-button" onclick="navigateToVideo('https://example.com/video3.mp4')">Watch Full Episode</button>
+                <button class="trailer-button" onclick="playTrailer('https://example.com/video3.mp4')">Trailer</button>
+            </div>
+        </div>
+    </section>
 </body>
 </html>

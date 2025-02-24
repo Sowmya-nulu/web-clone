@@ -22,3 +22,26 @@ document.addEventListener("DOMContentLoaded", function() {
 
     showVideo(index);
 });
+function playTrailer(videoUrl) {
+    window.open(videoUrl, '_blank');
+}
+
+function navigateToVideo(videoUrl) {
+    window.location.href = videoUrl;
+}
+
+function filterCards(category) {
+    let cards = document.querySelectorAll('.card');
+    let buttons = document.querySelectorAll('.filter-btn');
+    
+    buttons.forEach(btn => btn.classList.remove('active'));
+    document.querySelector(`[onclick="filterCards('${category}')"]`).classList.add('active');
+
+    cards.forEach(card => {
+        if (category === 'all' || card.dataset.category.includes(category)) {
+            card.style.display = 'block';
+        } else {
+            card.style.display = 'none';
+        }
+    });
+}

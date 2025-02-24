@@ -131,3 +131,81 @@ body {
         transform: translateX(-100%);
     }
 }
+.filter-buttons {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+.filter-btn {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    background: #fff;
+    color: #333;
+    font-weight: bold;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.filter-btn.active {
+    background: #ff7f50;
+    color: #fff;
+}
+
+.card-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+.card {
+    background: #1c1c1e;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    color: #fff;
+    position: relative;
+}
+
+.card img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.watch-button, .trailer-button {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.watch-button {
+    background: #007bff;
+    color: #fff;
+}
+
+.trailer-button {
+    background: #17a2b8;
+    color: #fff;
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+}
+
+.trailer-button:hover, .watch-button:hover {
+    opacity: 0.9;
+}
+
+.card h2 {
+    font-size: 1.5em;
+    margin: 10px 0;
+}
+
+.card p {
+    font-size: 1em;
+    margin: 10px 0;
+}
